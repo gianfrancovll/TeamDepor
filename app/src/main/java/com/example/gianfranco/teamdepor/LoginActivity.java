@@ -10,7 +10,7 @@ import android.widget.Button;
  * Created by Luis Gonzales on 15/05/2017.
  */
 
-public class Login extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     private Button btnLogin;
 
@@ -24,7 +24,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(Login.this, MainActivity.class);
+                intent.setClass(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
