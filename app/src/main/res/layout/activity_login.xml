@@ -25,44 +25,45 @@
             android:orientation="vertical">
 
             <RelativeLayout
+                android:id="@+id/RPrimero"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_centerVertical="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_centerVertical="true"
                 android:layout_marginBottom="30dp"
-                android:id="@+id/RPrimero">
+                android:layout_marginTop="@dimen/activity_horizontal_margin">
+
                 <ImageView
+                    android:id="@+id/imageView"
                     android:layout_width="wrap_content"
                     android:layout_height="150dp"
                     android:layout_centerInParent="true"
-                    android:id="@+id/imageView"
-                    android:src="@android:drawable/star_big_on"
-                    android:layout_marginTop="20dp"/>
+                    android:layout_marginTop="20dp"
+                    android:src="@android:drawable/star_big_on" />
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/relativeLayoutDoc"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:id="@+id/relativeLayoutDoc"
                 android:background="@android:color/white">
 
                 <ImageView
+                    android:id="@+id/user"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:id="@+id/user"
-                    android:src="@drawable/user"
                     android:layout_centerVertical="true"
-                    android:layout_margin="5dp"/>
+                    android:layout_margin="5dp"
+                    android:src="@drawable/user" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_centerVertical="true"
-                    android:layout_toRightOf="@+id/user"
-                    android:layout_toEndOf="@+id/user">
+                    android:layout_toEndOf="@+id/user"
+                    android:layout_toRightOf="@+id/user">
 
                     <android.support.design.widget.TextInputLayout
                         android:layout_width="match_parent"
@@ -72,15 +73,15 @@
                             android:id="@+id/email"
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/heightEditTex"
-                            android:hint="@string/strDoc"
-                            android:inputType="number"
-                            android:maxLines="1"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorBlack"
-                            android:maxLength="11"
                             android:digits="1234567890"
+                            android:hint="@string/strDoc"
                             android:imeOptions="actionNext"
-                            android:singleLine="true" />
+                            android:inputType="number"
+                            android:maxLength="11"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColor="@color/colorBlack" />
 
                     </android.support.design.widget.TextInputLayout>
                 </RelativeLayout>
@@ -88,29 +89,29 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/relativeLayoutPass"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="10dp"
-                android:id="@+id/relativeLayoutPass"
                 android:layout_marginTop="20dp"
                 android:background="@android:color/white">
 
                 <ImageView
+                    android:id="@+id/pass"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:id="@+id/pass"
-                    android:src="@drawable/clave"
                     android:layout_centerVertical="true"
-                    android:layout_margin="5dp"/>
+                    android:layout_margin="5dp"
+                    android:src="@drawable/clave" />
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_toRightOf="@id/pass"
-                    android:layout_toEndOf="@id/pass">
+                    android:layout_toEndOf="@id/pass"
+                    android:layout_toRightOf="@id/pass">
 
                     <android.support.design.widget.TextInputLayout
                         android:layout_width="match_parent"
@@ -120,51 +121,51 @@
                             android:id="@+id/password"
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/heightEditTex"
-                            android:hint="@string/strPass"
+                            android:background="@android:color/white"
+                            android:hint="@string/strPassword"
                             android:imeActionId="@+id/login"
                             android:imeActionLabel="@string/action_sign_in_short"
                             android:imeOptions="actionUnspecified"
                             android:inputType="textPassword"
                             android:maxLines="1"
-                            android:background="@android:color/white"
-                            android:textColor="@android:color/black"
-                            android:singleLine="true" />
+                            android:singleLine="true"
+                            android:textColor="@android:color/black" />
 
                     </android.support.design.widget.TextInputLayout>
                 </RelativeLayout>
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/relativeLayout3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/relativeLayoutPass"
-                android:paddingRight="20dp"
                 android:layout_marginTop="20dp"
-                android:id="@+id/relativeLayout3">
+                android:paddingRight="20dp">
 
                 <Button
-                    android:layout_width="120dp"
-                    android:layout_height="30dp"
-                    android:text="@string/strRegister"
                     android:id="@+id/btnRegistrar"
-                    android:textColor="@android:color/black"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
                     style="?android:textAppearanceSmall"
-                    android:background="@drawable/button"
-                    android:textStyle="bold"/>
-
-                <Button
                     android:layout_width="120dp"
                     android:layout_height="30dp"
-                    style="?android:textAppearanceSmall"
-                    android:text="@string/strLogin"
-                    android:id="@+id/btnIngresar"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button"
+                    android:text="@string/strRegister"
                     android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnIngresar"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
                     android:layout_toLeftOf="@+id/btnRegistrar"
                     android:background="@drawable/button"
-                    android:layout_marginRight="10dp"
-                    android:textStyle="bold"/>
+                    android:text="@string/strLogin"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
             </RelativeLayout>
 
         </LinearLayout>

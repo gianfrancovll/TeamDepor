@@ -19,9 +19,10 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-
     <string name="strDoc">DNI O RUC</string>
-    <string name="strPass">CONTRASEÑA</string>
+    <string name="strPassword">CONTRASEÑA</string>
     <string name="strLogin">INGRESAR</string>
-    <string name="strRegister">REGISTRARME</string>
+    <string name="strRegister">CREAR CUENTA</string>
+
+
 </resources>
