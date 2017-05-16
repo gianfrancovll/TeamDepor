@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_home"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_crear_partido"
+            android:icon="@drawable/ic_field"
+            android:title="Crear partido" />
+        <item
+            android:id="@+id/nav_buscar_partido"
+            android:icon="@drawable/ic_find"
+            android:title="Buscar partido" />
+        <item
+            android:id="@+id/nav_mis_partidos"
+            android:icon="@drawable/ic_ball"
+            android:title="Mis partidos" />
+        <item
+            android:id="@+id/nav_mensajes"
+            android:icon="@drawable/ic_message"
+            android:title="Mensajes" />
+        <item
+            android:id="@+id/nav_cerrar_sesion"
+            android:icon="@drawable/ic_signout"
+            android:title="Cerrar sesion" />
+    </group>
+
+    <item android:title="Compartir">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
